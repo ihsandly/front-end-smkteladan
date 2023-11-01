@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+:root {
+  --sans-serif: "Inter", sans-serif;
+  --black: #020617;
+  --nav-text-color: #64748b;
+  --blue-hover: #0ea5e9;
+  --white: #ffffff;
+  --title: #334155;
+  --sub-title: #64748b;
+  --margin-left-right: 0 8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--sans-serif);
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100rem;
+}
+
+/* header */
+nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 0.8rem;
+  background-color: var(--white);
+}
+
+.container-nav {
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8rem;
+}
+
+.sub-container-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.sub-nav-dua a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+
+.sub-nav-dua a:hover {
+  color: var(--blue-hover);
+  transition: 100ms all ease-in-out;
+}
+
+.sub-nav-dua {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* splide  */
+#splide-1 {
+  height: 500px;
+}
+
+#splide-1 .splide__slide img {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* sub-section */
+.sub-section {
+  background-color: var(--blue-hover);
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.container-sub-section {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: var(--margin-left-right);
+}
+
+.sub-section span {
+  margin-top: 3.5px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* section visi misi */
+.visi-misi {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.title-visi-misi h1 {
+  text-align: center;
+  color: var(--title);
+  font-size: 2rem;
+}
+
+/* .title-visi-misi h1:hover {
+  color: var(--blue-hover);
+  transition: 100ms all ease-in-out;
+} */
+
+.container-visi-misi {
+  margin: var(--margin-left-right);
+}
+
+.visi {
+  padding-bottom: 1.2rem;
+}
+
+.visi h2,
+.misi h2 {
+  color: var(--title);
+}
+
+.visi p,
+.misi p {
+  color: var(--sub-title);
+}
+
+/* section pertama */
+.pertama {
+  margin-top: 58px;
+  margin-bottom: 90px;
+  padding: 2rem 0;
+}
+
+.title-pertama {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.title-pertama h1 {
+  color: var(--title);
+  font-size: 2rem;
+}
+
+.title-pertama p {
+  font-size: 1.2rem;
+  color: var(--sub-title);
+}
+
+.sub-container-pertama {
+  margin-top: 0.5rem;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 30px;
+}
+
+.icon-pic-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-pic-details h3 {
+  color: var(--title);
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+#icon1 {
+  border-radius: 12px;
+  padding: 14px 16px;
+  background-color: #e0f2fe;
+}
+
+#icon2 {
+  border-radius: 12px;
+  padding: 14px 16px;
+  background-color: #d1fae5;
+}
+
+#icon3 {
+  border-radius: 12px;
+  padding: 14px 16px;
+  background-color: #fef9c3;
+}
+
+#icon4 {
+  border-radius: 12px;
+  padding: 14px 16px;
+  background-color: #ffe4e6;
+}
+
+/* section keahlian */
+.kompetensi-keahlian {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background-color: var(--blue-hover);
+}
+
+.container-kompetensi-keahlian {
+  margin: var(--margin-left-right);
+}
+
+.title-kompetensi-keahlian {
+  margin: var(--margin-left-right);
+  text-align: center;
+  line-height: 1.8;
+}
+
+.container-kompetensi-keahlian h1 {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.container-kompetensi-keahlian p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f1f5f9;
+}
+
+.details-kompetensi {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.icon-kompetensi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 16px 18px;
+  border-radius: 12px;
+}
+
+.icon-kompetensi img {
+  border-radius: 12px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-kompetensi {
+  margin-top: 0.8rem;
+}
+
+/* splide 2 */
+#splide-2 {
+  margin-top: 2.8rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#splide-2 .splide__slide {
+  margin: 0 10px;
+}
+
+#splide-2 .splide__slide img {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title-splide-2 {
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.title-splide-2 h1 {
+  font-size: 2rem;
+  color: var(--title);
+}
+
+.title-splide-2 p {
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+  color: var(--sub-title);
+}
+
+/* lokasi */
+.lokasi {
+  padding-top: 3.8rem;
+  padding-bottom: 5rem;
+}
+
+.container-lokasi {
+  margin: var(--margin-left-right);
+}
+
+.title-lokasi h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--title);
+}
+
+.details-lokasi {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 20px;
+}
+
+.details-lokasi h2 {
+  font-size: 1.1rem;
+  color: var(--title);
+}
+
+.details-lokasi p {
+  color: var(--sub-title);
+  font-size: 1rem;
+}
+
+.kontak-lokasi {
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+.kontak {
+  margin-bottom: 30px;
+}
+
+.map iframe {
+  border-radius: 12px;
+}
+
+/* footer */
+.footer-pertama {
+  padding: 1rem 0;
+  height: 120px;
+  background-color: var(--blue-hover);
+  color: var(--white);
+}
+
+.container-footer-pertama {
+  margin: var(--margin-left-right);
+  display: flex;
+}
+
+.footer-sub {
+  background-color: #075985;
+}
+
+.container-footer {
+  height: 25px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--margin-left-right);
+}
+
+.container-footer p {
+  color: white;
+  font-size: 0.7rem;
+}

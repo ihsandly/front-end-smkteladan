@@ -3,14 +3,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
-    <!-- splide -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- swiper -->
     <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    />
     <title>SMK Swasta Teladan</title>
   </head>
   <body>
@@ -19,73 +19,70 @@
         <div class="container-nav">
           <div class="logo">
             <a href="#"
-              >Yayasan Perguruan Teladan<br />
-              SMK Swasta Teladan Pematang Siantar</a
+              >SMK Swasta Teladan<br />
+              Pematang Siantar</a
             >
           </div>
-          <div class="sub-nav-dua">
+          <div class="sub-nav-dua" id="sub-nav">
             <a href="#">Beranda</a>
             <a href="#">Tentang Kami</a>
             <a href="#">Kompetensi Keahlian</a>
             <a href="#">Kontak</a>
           </div>
+          <div id="hamburger-menu">
+            <a href="#"
+              ><img src="assets/icon/hamburger-menu.svg" alt="hamburger menu"
+            /></a>
+          </div>
         </div>
       </nav>
     </header>
 
-    <section class="splide" id="splide-1" aria-label="Basic Structure Example">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
+    <section>
+      <div class="swiper" id="swiper-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <img
-              src="https://images.unsplash.com/photo-1592066575517-58df903152f2?auto=format&fit=crop&q=80&w=1996&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Galeri Foto"
+              src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Gallery"
             />
-          </li>
-          <li class="splide__slide">
+          </div>
+          <div class="swiper-slide">
             <img
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Galeri Foto"
+              src="https://images.unsplash.com/photo-1592303637753-ce1e6b8a0ffb?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Gallery"
             />
-          </li>
-          <li class="splide__slide">
+          </div>
+          <div class="swiper-slide">
             <img
-              src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Galeri Foto"
+              src="https://images.unsplash.com/photo-1576267443888-219e7358f757?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Gallery"
             />
-          </li>
-          <li class="splide__slide">
+          </div>
+          <div class="swiper-slide">
             <img
-              src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Galeri Foto"
+              src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Gallery"
             />
-          </li>
-          <li class="splide__slide">
+          </div>
+          <div class="swiper-slide">
             <img
-              src="https://images.unsplash.com/photo-1635424239131-32dc44986b56?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Galeri Foto"
+              src="https://images.unsplash.com/photo-1576267443888-219e7358f757?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Gallery"
             />
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
+
     <div class="sub-section">
-      <div class="container-sub-section">
-        SMK Swasta Teladan <span>Pematang Siantar</span>
-      </div>
+      <div class="container-sub-section">SMK Swasta Teladan</div>
     </div>
 
     <section class="visi-misi">
-      <div class="title-visi-misi" data-aos="fade-up" data-aos-duration="800">
-        <h1>Visi dan Misi</h1>
-      </div>
+      <div class="title-visi-misi"><h1>Visi dan Misi</h1></div>
       <div class="container-visi-misi">
-        <div
-          class="visi"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="80"
-        >
+        <div class="visi">
           <h2>Visi</h2>
           <p>
             Menjadi Lembaga Pendidikan dan Latihan Profesional Untuk Menyiapkan
@@ -94,12 +91,7 @@
             Era Global.
           </p>
         </div>
-        <div
-          class="misi"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="100"
-        >
+        <div class="misi">
           <h2>Misi</h2>
           <p>
             1. Meningkatkan profesionalisme SMK sebagai pusat pengembangan
@@ -121,23 +113,13 @@
 
     <section class="pertama">
       <div class="container-pertama">
-        <div
-          class="title-pertama"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="80"
-        >
+        <div class="title-pertama">
           <h1>Kenapa harus SMK Swasta Teladan?</h1>
           <p>Alasan kenapa kalian harus bergabung</p>
         </div>
         <div class="sub-container-pertama">
           <div class="details">
-            <div
-              class="icon-pic-details"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
+            <div class="icon-pic-details">
               <div class="icon-image">
                 <img id="icon1" src="assets/icon/bar-chart.svg" alt="koneksi" />
               </div>
@@ -145,12 +127,7 @@
                 <h3>Kerjasama Luas</h3>
               </div>
             </div>
-            <div
-              class="icon-pic-details"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
+            <div class="icon-pic-details">
               <div class="icon-image">
                 <img id="icon2" src="assets/icon/users.svg" alt="koneksi" />
               </div>
@@ -158,12 +135,7 @@
                 <h3>Pendidik Profesional</h3>
               </div>
             </div>
-            <div
-              class="icon-pic-details"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
+            <div class="icon-pic-details">
               <div class="icon-image">
                 <img id="icon3" src="assets/icon/briefcase.svg" alt="koneksi" />
               </div>
@@ -171,12 +143,7 @@
                 <h3>Siap Kerja</h3>
               </div>
             </div>
-            <div
-              class="icon-pic-details"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
+            <div class="icon-pic-details">
               <div class="icon-image">
                 <img id="icon4" src="assets/icon/book.svg" alt="koneksi" />
               </div>
@@ -191,22 +158,12 @@
 
     <section class="kompetensi-keahlian">
       <div class="container-kompetensi-keahlian">
-        <div
-          class="title-kompetensi-keahlian"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="80"
-        >
+        <div class="title-kompetensi-keahlian">
           <h1>Kompetensi Keahlian</h1>
           <p>Keahlian yang dapat kalian ambil</p>
         </div>
         <div class="details-kompetensi">
-          <div
-            class="icon-kompetensi"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
+          <div class="icon-kompetensi">
             <div>Akuntansi</div>
             <div class="image-kompetensi">
               <img
@@ -215,12 +172,7 @@
               />
             </div>
           </div>
-          <div
-            class="icon-kompetensi"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
+          <div class="icon-kompetensi">
             <div>Rekayasa Perangkat Lunak</div>
             <div class="image-kompetensi">
               <img
@@ -229,12 +181,7 @@
               />
             </div>
           </div>
-          <div
-            class="icon-kompetensi"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
+          <div class="icon-kompetensi">
             <div>Teknik Komputer Jaringan</div>
             <div class="image-kompetensi">
               <img
@@ -243,12 +190,7 @@
               />
             </div>
           </div>
-          <div
-            class="icon-kompetensi"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
+          <div class="icon-kompetensi">
             <div>Perkantoran</div>
             <div class="image-kompetensi">
               <img
@@ -257,12 +199,7 @@
               />
             </div>
           </div>
-          <div
-            class="icon-kompetensi"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
+          <div class="icon-kompetensi">
             <div>Alfamart Class</div>
             <div class="image-kompetensi">
               <img
@@ -280,69 +217,54 @@
         <h1>Galeri</h1>
         <p>Foto dokumentasi</p>
       </div>
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
+      <div class="swiper" id="swiper-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="gallery"
+              alt="Gallery"
             />
-          </li>
-          <li class="splide__slide">
+          </div>
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1592303637753-ce1e6b8a0ffb?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="gallery"
+              alt="Gallery"
             />
-          </li>
-          <li class="splide__slide">
+          </div>
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1576267443888-219e7358f757?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="gallery"
+              alt="Gallery"
             />
-          </li>
-          <li class="splide__slide">
+          </div>
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="gallery"
+              alt="Gallery"
             />
-          </li>
-          <li class="splide__slide">
+          </div>
+          <div class="swiper-slide">
             <img
               src="https://images.unsplash.com/photo-1576267443888-219e7358f757?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="gallery"
+              alt="Gallery"
             />
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="lokasi">
       <div class="container-lokasi">
-        <div
-          class="title-lokasi"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="80"
-        >
+        <div class="title-lokasi">
           <h1>Kontak dan Lokasi</h1>
         </div>
         <div class="details-lokasi">
           <div class="kontak-lokasi">
-            <div
-              class="kontak"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
+            <div class="kontak">
               <h2>Kontak</h2>
               <p>Email : exampleteladan@gmail.com</p>
             </div>
-            <div
-              class="location"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
+            <div class="location">
               <h2>Lokasi</h2>
               <p>
                 Jalan Singosari No.3, Kel.Bantan, Kec. Siantar Barat, Kota
@@ -350,12 +272,7 @@
               </p>
             </div>
           </div>
-          <div
-            class="map"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
+          <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.870768536468!2d99.05458808114122!3d2.9666849792342376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30318489a10d8f41%3A0x7c7a11f0d461ab06!2sYayasan%20Pendidikan%20Teladan!5e0!3m2!1sid!2sid!4v1698849162061!5m2!1sid!2sid"
               width="500"
@@ -373,7 +290,9 @@
     <footer>
       <div class="footer-pertama">
         <div class="container-footer-pertama">
-          <div><h3>SMK Teladan Pematang Siantar</h3></div>
+          <div>
+            <h3>SMK Teladan Pematang Siantar</h3>
+          </div>
         </div>
       </div>
       <div class="footer-sub-pertama">
@@ -392,10 +311,5 @@
 
     <!-- Script -->
     <script src="/assets/script.js"></script>
-    <!-- aos -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

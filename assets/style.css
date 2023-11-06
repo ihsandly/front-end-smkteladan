@@ -8,6 +8,8 @@
   --title: #334155;
   --sub-title: #64748b;
   --margin-left-right: 0 8rem;
+  --margin-lg: 0 4rem;
+  --margin-sm: 0 1.8rem;
 }
 
 * {
@@ -18,10 +20,7 @@
   scroll-behavior: smooth;
 }
 
-body {
-  height: 100rem;
-}
-
+/* head and footer */
 /* header */
 nav {
   position: fixed;
@@ -72,14 +71,53 @@ nav {
   gap: 1.2rem;
 }
 
-/* splide  */
-#splide-1 {
+#hamburger-menu {
+  display: none;
+}
+/* header */
+
+/* footer */
+.footer-pertama {
+  padding: 1rem 0;
+  height: 120px;
+  background-color: var(--blue-hover);
+  color: var(--white);
+}
+
+.container-footer-pertama {
+  margin: var(--margin-left-right);
+  display: flex;
+}
+
+.footer-sub {
+  background-color: #075985;
+}
+
+.container-footer {
+  height: 25px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--margin-left-right);
+}
+
+.container-footer p {
+  color: white;
+  font-size: 0.7rem;
+}
+/* footer */
+/* head and footer */
+
+/* swiper  */
+#swiper-1 {
+  width: 100%;
   height: 500px;
 }
 
-#splide-1 .splide__slide img {
-  width: 100vw;
-  height: 500px;
+#swiper-1 .swiper-slide img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -171,6 +209,7 @@ nav {
 .details {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding: 2rem 0;
   gap: 30px;
@@ -187,6 +226,7 @@ nav {
   color: var(--title);
   margin-top: 0.8rem;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 #icon1 {
@@ -275,21 +315,17 @@ nav {
 
 /* splide 2 */
 #splide-2 {
-  margin-top: 2.8rem;
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden;
+  margin-top: 2rem;
 }
 
-#splide-2 .splide__slide {
-  margin: 0 10px;
-}
-
-#splide-2 .splide__slide img {
+#swiper-2 {
+  width: 100%;
   height: 300px;
-  width: 400px;
+}
+
+#swiper-2 .swiper-slide img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -330,6 +366,7 @@ nav {
 .details-lokasi {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding-top: 40px;
   gap: 20px;
 }
@@ -357,33 +394,106 @@ nav {
   border-radius: 12px;
 }
 
-/* footer */
-.footer-pertama {
-  padding: 1rem 0;
-  height: 120px;
-  background-color: var(--blue-hover);
-  color: var(--white);
+/* media query */
+@media only screen and (max-width: 990px) {
+  #sub-nav {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .container-kompetensi-keahlian {
+    margin: 0 1px;
+  }
+
+  .title-kompetensi-keahlian {
+    margin: 0 1px;
+  }
 }
 
-.container-footer-pertama {
-  margin: var(--margin-left-right);
-  display: flex;
+@media only screen and (max-width: 768px) {
+  .container-nav {
+    margin: var(--margin-lg);
+  }
+
+  .container-footer-pertama {
+    margin: var(--margin-lg);
+  }
+
+  .container-footer {
+    margin: var(--margin-lg);
+  }
+
+  .container-sub-section {
+    margin: var(--margin-lg);
+  }
+
+  .container-visi-misi {
+    margin: var(--margin-lg);
+  }
+
+  .container-lokasi {
+    margin: var(--margin-lg);
+  }
+
+  .details-lokasi {
+    gap: 3rem;
+  }
 }
 
-.footer-sub {
-  background-color: #075985;
-}
+@media only screen and (max-width: 480px) {
+  .container-nav {
+    margin: var(--margin-sm);
+  }
 
-.container-footer {
-  height: 25px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-  margin: var(--margin-left-right);
-}
+  .container-footer-pertama {
+    margin: var(--margin-sm);
+  }
 
-.container-footer p {
-  color: white;
-  font-size: 0.7rem;
+  .container-footer {
+    margin: var(--margin-sm);
+  }
+
+  .container-sub-section {
+    margin: var(--margin-sm);
+  }
+
+  .container-visi-misi {
+    margin: var(--margin-sm);
+  }
+
+  .sub-section span {
+    margin-top: 0px;
+  }
+
+  .visi-misi {
+    padding-top: 2.6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .pertama {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .icon-pic-details {
+    width: 200px;
+  }
+
+  .map iframe {
+    width: 325px;
+  }
+
+  .container-footer {
+    flex-wrap: wrap;
+    text-align: left;
+    height: 52px;
+  }
+
+  .container-footer-pertama {
+    margin: var(--margin-sm);
+    display: flex;
+  }
 }

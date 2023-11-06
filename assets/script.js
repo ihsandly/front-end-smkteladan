@@ -11,17 +11,22 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// splide js
-const splide1 = new Splide("#splide-1", {
-  type: "fade",
-  rewind: true,
-  autoplay: true,
+// swiper js
+const swiper = new Swiper("#swiper-1", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  speed: "2000",
+  autoplay: {
+    delay: 3000,
+  },
+  effect: "fade",
 });
-splide1.mount();
 
-const splide2 = new Splide("#splide-2", {
-  type: "loop",
-  perPage: true,
-  focus: "center",
+const swiper2 = new Swiper("#swiper-2", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 5,
 });
-splide2.mount();

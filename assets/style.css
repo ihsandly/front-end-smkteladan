@@ -347,6 +347,111 @@ nav {
   color: var(--sub-title);
 }
 
+/* berita */
+.berita {
+  padding: 4rem 0;
+}
+
+.container-berita {
+  margin: var(--margin-left-right);
+}
+
+.title-berita {
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.title-berita h1 {
+  font-size: 2rem;
+  color: var(--title);
+}
+
+.title-berita p {
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+  color: var(--sub-title);
+}
+
+.container-details-berita {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.berita-icon {
+  border-radius: 12px;
+  width: 350px;
+  height: 300px;
+  background-color: #0ea5e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.berita-icon:hover img {
+  transform: scale(1.1);
+}
+
+.image-berita img:hover {
+  filter: brightness(55%);
+  transform: scale(1.1);
+}
+
+.image-berita img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: all ease-in-out 350ms;
+}
+
+.judul-berita,
+.judul-berita-last {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.judul-berita a {
+  /* font-weight: 500; */
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.judul-berita a:hover {
+  color: var(--white);
+  text-decoration: underline;
+  transition: all ease-in-out 150ms;
+}
+
+.judul-berita a > p:nth-child(2) {
+  margin-top: 8px;
+}
+
+.berita-icon-last {
+  border-radius: 12px;
+  width: 350px;
+  height: 300px;
+  background-color: var(--blue-hover);
+  position: relative;
+  overflow: hidden;
+}
+
+.judul-berita-last a {
+  font-size: 0.8rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.judul-berita-last a:hover {
+  text-decoration: underline;
+}
+
 /* lokasi */
 .lokasi {
   padding-top: 3.8rem;
@@ -438,6 +543,10 @@ nav {
     margin: var(--margin-lg);
   }
 
+  .container-berita {
+    margin: var(--margin-lg);
+  }
+
   .details-lokasi {
     gap: 3rem;
   }
@@ -484,6 +593,10 @@ nav {
 
   .map iframe {
     width: 325px;
+  }
+
+  .container-berita {
+    margin: var(--margin-sm);
   }
 
   .container-footer {

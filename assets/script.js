@@ -27,6 +27,10 @@ const swiper2 = new Swiper("#swiper-2", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
+  speed: "2000",
+  autoplay: {
+    delay: 2500,
+  },
   slidesPerView: 4,
   spaceBetween: 5,
 });
